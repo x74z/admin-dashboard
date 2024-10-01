@@ -1,0 +1,103 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* reset end */
+
+@font-face {
+  font-family: ROBOTO;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif, system-ui;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+  background-color: #2094d4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 53px;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.sidebar>* {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-left: 9%;
+}
+
+.sidebar-buttons svg {
+  width: 30px;
+  fill: whitesmoke;
+}
+
+.dashboard-logo {
+  margin-left: 5%;
+  margin-bottom: 1%;
+  grid-row: 1/3;
+  span{
+    margin-top: 6%;
+    margin-left: 2%;
+    font-size: 1.6rem;
+  }
+
+  svg {
+    width: 60px;
+  }
+}
