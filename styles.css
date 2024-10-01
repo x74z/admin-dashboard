@@ -61,6 +61,7 @@ html {
 }
 
 .container {
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
@@ -74,7 +75,6 @@ html {
   color: white;
   font-weight: 900;
   font-size: 1.3rem;
-  height: 100vh;
 }
 
 .sidebar>* {
@@ -94,7 +94,8 @@ html {
   display: grid;
   grid-template-columns: 18% 82%;
   align-items: center;
-  span{
+
+  span {
     font-size: 1.6rem;
   }
 
@@ -105,7 +106,18 @@ html {
 }
 
 /* content styling */
-.content{
+.content {
   display: grid;
-  grid-template-rows: 15% 75%;
+  grid-template-rows: 17% 85%;
+  color: black;
+  font-weight: 500;
+}
+
+.header {
+  box-shadow: 8px 2px 20px 0px gray;
+  z-index: 1;
+}
+
+.main-content {
+  background-color: lightgray;
 }
