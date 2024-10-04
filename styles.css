@@ -117,7 +117,7 @@ html {
   box-shadow: 8px 2px 20px 0px gray;
   z-index: 1;
   display: grid;
-  grid-template-rows: 35% 75%;
+  grid-template-rows: 0.35fr 0.75fr;
 }
 
 .header>* {
@@ -132,7 +132,6 @@ html {
 }
 
 .top-container {
-  background-color: pink;
   display: grid;
   grid-template-columns: 5fr 3fr;
   align-items: center;
@@ -141,7 +140,7 @@ html {
 
 .search-bar {
   display: grid;
-  grid-template-columns: 8% 90%;
+  grid-template-columns: 1fr 9fr;
   grid-template-rows: 1fr;
   height: 20%;
   align-items: center;
@@ -151,13 +150,59 @@ html {
 
 .account {
   display: grid;
-  grid-template-columns: 25% 25% 50%;
+  grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
   align-content: center;
   justify-items: center;
 }
 
+.bottom-container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-content: center;
+  align-items: center;
+}
 
+.greeting {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+
+  img {
+    justify-self: end;
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  p {
+    justify-self: start;
+    margin-left: 20px;
+    font-weight: 600;
+  }
+
+  p:nth-of-type(1) {
+    font-size: 1.1rem;
+  }
+
+  p:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
+}
+
+.upload-share-new {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-right: 30px;
+
+  button {
+    background-color: lightblue;
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px 20px;
+  }
+}
 
 .main-content {
   background-color: lightgray;
