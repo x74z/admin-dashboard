@@ -67,7 +67,7 @@ html {
 }
 
 .sidebar {
-  background-color: #2283f4;
+  background-color: #1992d4;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 53px;
@@ -146,6 +146,16 @@ html {
   align-items: center;
   align-content: center;
   margin-left: 80px;
+
+  input {
+    border: 0;
+    height: 40px;
+    background-color: #e2e8f0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
 }
 
 .account {
@@ -154,6 +164,14 @@ html {
   align-items: center;
   align-content: center;
   justify-items: center;
+  font-weight: 800;
+  font-size: 1.35rem;
+  svg{
+    justify-self: end;
+  }
+  p{
+    justify-self: start;
+  }
 }
 
 .bottom-container {
@@ -182,11 +200,11 @@ html {
   }
 
   p:nth-of-type(1) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   p:nth-of-type(2) {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -197,13 +215,20 @@ html {
   margin-right: 30px;
 
   button {
-    background-color: lightblue;
+    background-color: #1992d4;
     width: 150px;
-    border-radius: 50%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     padding: 10px 20px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border: 0;
   }
 }
 
 .main-content {
-  background-color: lightgray;
+  background-color: #e2e8f0;
 }
