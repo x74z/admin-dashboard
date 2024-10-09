@@ -220,11 +220,21 @@ html {
   }
 }
 
+.upload-share-new button:nth-child(3) {
+  justify-self: end;
+}
+
+.upload-share-new button:nth-child(3) {
+  justify-self: start;
+}
+
 /* main content styling */
 .main-content {
   background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
+  gap: 30px;
+  height: 97.5%;
 }
 
 .projects-container {
@@ -254,6 +264,7 @@ html {
   border-radius: 10px;
   border-left: 13px solid #efb224;
   padding: 40px 30px;
+  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
 
   svg {
     height: 30px;
@@ -274,4 +285,50 @@ html {
   display: flex;
   justify-content: end;
   gap: 36px;
+}
+
+/* announcements styling */
+.announcements-trending {
+  margin-top: 14px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-right: 30px;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: 2.8fr 20fr;
+  height: 82%;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: 2.8fr 20fr;
+  height: 82%;
+}
+
+.announcements-title,
+.trending-title {
+  align-self: end;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.announcements-content {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 10px;
+}
+
+.trending-content {
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 10px;
 }
