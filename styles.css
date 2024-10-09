@@ -68,41 +68,30 @@ html {
 
 .sidebar {
   background-color: #1992d4;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 53px;
-  align-items: center;
   color: white;
   font-weight: 900;
   font-size: 1.3rem;
-}
-
-.sidebar>* {
   display: grid;
-  grid-template-columns: 15% 85%;
-  margin-left: 9%;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(12, 5%);
+  padding: 6% 3%;
+  align-items: center;
+  font-size: 1.6rem;
 }
 
-.sidebar-buttons svg {
-  width: 30px;
+.sidebar svg {
+  justify-self: center;
+  width: 40px;
   fill: whitesmoke;
 }
 
-.dashboard-logo {
-  margin-left: 5.2%;
-  grid-row: 1/3;
-  display: grid;
-  grid-template-columns: 18% 82%;
-  align-items: center;
+#dashboard-logo {
+  width: 80px;
+}
 
-  span {
-    font-size: 1.6rem;
-  }
-
-  svg {
-    width: 60px;
-    height: 60px;
-  }
+#dashboard-text {
+  font-size: 1.9rem;
+  font-weight: 900;
 }
 
 /* content styling */
@@ -269,10 +258,12 @@ html {
   svg {
     height: 30px;
   }
+
   p {
     font-weight: 100;
     color: grey;
   }
+
   strong {
     font-size: 1.3rem;
     color: black;
